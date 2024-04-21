@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-04-19 13:24+0300\n"
+"POT-Creation-Date: 2024-04-21 18:09+0300\n"
 "PO-Revision-Date: 2024-04-19 13:32+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -18,7 +18,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: app/email.py:19
-msgid "[Microblog] Reset Your Password"
-msgstr "[Microblog] Nueva Contraseña"
+#~ msgid "[TheBlogapp] Reset Your Password"
+#~ msgstr "[TheBlogapp] Nueva Contraseña"
+
+#~ msgid "Please log in to access this page."
+#~ msgstr "Por favor ingrese para acceder a esta página."
+
+#~ msgid "Username"
+#~ msgstr "Nombre de usuario"
+
+#~ msgid "Password"
+#~ msgstr "Contraseña"
+
+#~ msgid "Remember Me"
+#~ msgstr "Recordarme"
+
+#~ msgid "Check your email for the instructions to reset your password"
+#~ msgstr "Busca en tu email las instrucciones para crear una nueva contraseña"
 

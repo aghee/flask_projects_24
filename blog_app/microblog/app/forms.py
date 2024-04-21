@@ -4,7 +4,7 @@ from wtforms.validators import DataRequired,Email,EqualTo,ValidationError,Length
 from app import db
 import sqlalchemy as sa
 from app.models import User
-from flask_babel import lazy_gettext as _l
+from flask_babel import _,lazy_gettext as _l
 
 class LoginForm(FlaskForm):
     username=StringField(_l('Username'),validators=[DataRequired()])
