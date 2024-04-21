@@ -14,3 +14,4 @@ logs
 config.py
 __init__.py
 messages.pot
+messages.mo
