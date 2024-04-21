@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask app demo</title>
+    <style>
+        .button{
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            border-radius: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    {% if session %}
+    <div><pre>{{ pretty }}</pre></div>
+    <p><a href="{{url_for('logout')}}"><b>Logout<b></a></p>
+    {% else %}
+    <p><a href="{{url_for('login')}}"><button class="button">Login with <b>Google<b></button></a></p>
+    {% endif %}
+</body>
+</html>
