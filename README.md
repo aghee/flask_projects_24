@@ -15,7 +15,7 @@ This is a simple app developed using a guided tutorial, and enhanced with variou
 ## Contribution Guidelines
 [Zen of Python](https://docs.python.org/3/glossary.html#term-Zen-of-Python)
 
-## Instructions
+### Instructions
 
 Fork this repository
 
