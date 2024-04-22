@@ -2,7 +2,7 @@
 Flask projects
 
 ## Description
-Simple projects developed using python and flask as I build my skill in this tech stack.Feel free to contribute by submitting your scripts written in python
+Simple projects developed using python and flask as I build my skill in this tech stack.Feel free to contribute by submitting your scripts written in python.
 
 ## Project Dependencies
 Dependencies for the projects can be found on requirements.txt found in each project
