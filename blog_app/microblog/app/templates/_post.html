@@ -14,7 +14,10 @@
             {{ _('%(username)s said %(when)s',
             username=user_link,when=moment(i.timestamp).fromNow()) }}
             <br>
-            {{ i.body }}
+            {% if i.language and i.language !=g.locale %}
+            <br><br>
+            <a href="#">{{ _('Translate') }}</a>
+            {% endif %}
         </td>
     </tr>
 </table>
