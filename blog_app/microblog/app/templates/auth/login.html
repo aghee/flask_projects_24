@@ -4,10 +4,10 @@
 {% block content %}
 <h1> {{ _('Sign In') }}</h1>
 {{ wtf.quick_form(form)}}
-<p><b>{{ _('Not Signed Up?') }}</b><a href="{{ url_for('register') }}"><b>{{ _('Click to register') }}<b></a></p>
+<p><b>{{ _('Not Signed Up?') }}</b><a href="{{ url_for('auth.register') }}"><b>{{ _('Click to register') }}<b></a></p>
 <p>
     <b>{{ _('Forgot your password?') }}</b>
-    <a href="{{url_for('reset_password_request')}}"><b>{{ _('Click to reset') }}</b></a>
+    <a href="{{url_for('auth.reset_password_request')}}"><b>{{ _('Click to reset') }}</b></a>
 </p>
 {% endblock %}
 <br>
@@ -21,6 +21,5 @@
     }
 
 </style>
-<p><a href="{{url_for('login_google')}}"><button class="button"><b>{{ _('Sign In with Google')}}<b></button></a></p>
+<p><a href="{{url_for('auth.login_google')}}"><button class="button"><b>{{ _('Sign In with Google')}}<b></button></a></p>
 {% endblock %}
-
