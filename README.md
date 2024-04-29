@@ -5,7 +5,7 @@ Flask projects
 Simple projects developed using python and flask as I build my skill in this tech stack.Feel free to contribute by submitting your scripts written in python.
 
 ## Project Dependencies
-Dependencies for the projects can be found on requirements.txt found in each project
+Dependencies for each project can be found on the respective requirements.txt
 
 Update the files with secret credentials as needed
 
