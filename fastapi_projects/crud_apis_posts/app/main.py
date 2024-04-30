@@ -15,7 +15,7 @@ class Post(BaseModel):
 
 my_posts=[{"title":"endmonth training","content":"dinner planner meeting","id":1},
           {"title":"viola davis movies","content":"How to get away with murder","id":2},{"title":"Floods in kenya",
-"content":"Elnino in kenya is here","id":3}]
+"content":"Elnino in kenya","id":3}]
 
 @app.get('/posts')
 def get_posts():
@@ -68,15 +68,26 @@ def delete_posts(id:int):
     my_posts.pop(item_index)
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 
+@app.put("/posts/{id}")
+def update_post(id:int,post:Post):
+    # print(post)
+    item_index=find_index(id)
+    if item_index ==None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail="post with id {} does not exist".format(id))
+    post_dict=post.model_dump()
+    post_dict['id']=id
+    my_posts[item_index]=post_dict
+
+    return {"an update":post_dict}
 
 
-
-
-
-# @app.post("/createposts")
-# def create_post(payload:dict= Body(...)):# take extract all fields from body 
-# convert to python dict then store in variable called payload
-#     print(payload)
-#     return {'new_message':f"title:{payload['title']} content:{payload['content']}"}
-
+'''
+@app.post("/createposts")
+def create_post(payload:dict= Body(...)):# take extract all fields from body 
+convert to python dict then store in variable called payload
+    print(payload)
+    return {'new_message':f"title:{payload['title']} content:{payload['content']}"}
 #title str, content str,category,Bool
+'''
+
+
